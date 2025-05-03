@@ -1,5 +1,5 @@
 resource "aws_security_group" "main" {
-  name        = "local.sg_finalname"
+  name        = local.sg_finalname
   description = "Allow TLS inbound traffic and all outbound traffic"
   vpc_id      = var.vpc_id
   
